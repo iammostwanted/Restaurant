@@ -1,0 +1,243 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+@*<head>
+    <meta charset="utf-8">
+    <title>Home Page</title>
+    <link rel="shortcut icon" href="images/chef.png">
+
+    <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="fonts/Aladin regular.ttf">
+
+
+    <script src="jquery/dist/jquery.js"></script>
+    <script src="bootstrap/dist/js/bootstrap.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
+            async defer></script>
+    <script src="http://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
+    <script type="text/javascript">
+            var map;
+
+            DG.then(function () {
+                map = DG.map('map', {
+                    center: [43.203815, 76.896679],
+                    zoom: 16
+                });
+
+                DG.marker([43.203815, 76.896679]).addTo(map).bindPopup('This is our location');
+            });
+    </script>
+
+    <script>
+		$(document).ready(function(){
+		    $("#showLeft").click(function(){
+		        $("#menu1").slideToggle	(1000);
+		    });
+		});
+		$(document).ready(function(){
+		    $("#showRight").click(function(){
+		        $("#menu2").slideToggle	(1000);
+		    });
+		});
+
+		$('.dropdown-toggle').dropdown();
+
+		$('#myModal').on('shown.bs.modal', function () {
+	      $('#myInput').focus()
+	    })
+	    $('#myCarousel').carousel();
+    </script>
+</head>*@
+@Styles.Render("~/Content/style.css")
+
+<body>
+    <div class="fix">
+        <menu>
+            <div class="icon">
+                <a href=""><span class="glyphicon glyphicon-list fonting"></span></a>
+            </div>
+            <ul>
+                <li><a class="active" href="">Home page</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="">Partners</a></li>
+            </ul>
+        </menu>
+    </div>
+
+
+    <div class="container stat newClass card-3">
+        <div class="row padd">
+            <h1 class="specialText" align="center">Welcome to our Italian Cafe</h1>
+
+            <div class="col-md-12">
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class=""></li>
+                        <li data-target="#myCarousel" data-slide-to="1" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="2" class=""></li>
+                    </ol>
+                    <div class="carousel-inner" role="listbox">
+                        <div align="center" class="item">
+                            <img class="carouselImage" src="~/Content/images/cafe.jpg" alt="First slide">
+                        </div>
+                        <div align="center" class="item active">
+                            <img class="carouselImage" src="~/Content/images/cafe1.jpg" alt="Second slide">
+                        </div>
+                        <div align="center" class="item">
+                            <img class="carouselImage" src="~/Content/images/cafe2.jpg" alt="Third slide">
+                        </div>
+                    </div>
+                    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+            <div class="wordPlace">
+                It's place to make dreams come true
+            </div>
+        </div>
+
+        <!-- 			<div class="row">
+                        <h1 align="center" class="headText">Latest	 recipes</h1>
+                    </div> -->
+
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-7">
+                <h3 class="specialText">Taste it!</h3>
+                <p class="contentText">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti ad vel, similique corporis doloribus soluta. Quisquam deserunt quae fugit optio, sint voluptatem beatae necessitatibus accusamus quod, ullam illo, qui eaque.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde itaque tempora amet nesciunt doloribus ducimus magni praesentium quaerat est earum assumenda neque, eius explicabo atque tempore laudantium aspernatur, accusantium architecto!
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero quis iusto nihil commodi culpa, neque facere debitis vel ratione mollitia voluptates incidunt, velit amet. Ad ducimus asperiores libero facere id.
+                </p>
+            </div>
+            <div class="col-md-4">
+                <div align="center" class="panel">
+                    <img class="panelSize" src="~/Content/images/salad.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-4">
+                <div class="panel" align="center">
+                    <img src="~/Content/images/spaget.png" alt="" class="panelSize">
+                </div>
+            </div>
+            <div class="col-md-7">
+                <h3 class="specialText"> mmmm Spagetties</h3>
+                <p class="contentText">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim similique voluptatibus obcaecati ea, minima! Ex officiis earum, numquam quam sunt dolorum unde architecto, recusandae incidunt ducimus eum assumenda magnam. Deserunt.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium esse perferendis placeat illo? Magnam corrupti nemo saepe est ullam esse ex, recusandae aspernatur autem. Reiciendis saepe nulla expedita quam incidunt.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis officia labore deserunt temporibus vel, nesciunt quaerat veritatis cumque eos, natus quam cum illum quisquam odio error debitis necessitatibus beatae dolor?
+                </p>
+            </div>
+        </div>
+
+
+
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-2">
+                <div class="panel" align="center">
+                    <img class="panelSize2" src="~/Content/images/coke.png" alt="">
+                </div>
+            </div>
+            <div class="col-md-7">
+                <h3 align="center" class="specialText"> Pizza is important </h3>
+                <p class="contentText">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est magnam odit officia nesciunt inventore, autem ullam beatae magni rem quia nobis qui, esse fugiat doloribus amet, blanditiis cumque optio voluptatem.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure ullam ratione cum, impedit illum et temporibus suscipit harum tempore ipsam quis enim quibusdam mollitia voluptates repudiandae recusandae modi corporis maiores!
+                </p>
+            </div>
+            <div class="col-md-2">
+                <div class="panel" align="center">
+                    <img src="~/Content/images/pizza.png" alt="" class="panelSize2">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6 redRound">
+                <h1 class="specialText" align="center">
+                    Let us to Bring your favourite food
+                    <img class="circled" src="~/Content/images/deliver.png" alt="">
+                </h1>
+                <form class="form-horizontal" method="post" id="the-form">
+                    <div class="form-group">
+                        <label for="inputName" class="col-sm-4 control-label colorHead">Name</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" placeholder="Your name" name="name">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inputEmail3" class="col-sm-4 control-label colorHead">Surname</label>
+                        <div class="col-sm-8">
+                            <input class="form-control" id="inputEmail3" placeholder="Surname" name="surname">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inputPassword3" class="col-sm-4 control-label colorHead">Phone-number</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="inputMobile" placeholder="Phone-number" name="phone">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-1 col-sm-8">
+                        </div>
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <button class="btn btn-success">
+                                <span class="glyphicon glyphicon-earphone"></span>
+                                Call
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <hr>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <h4 class="footHeading">Our Contacts: </h4>
+                <ul class="Contacts">
+                    <li><span class="glyphicon glyphicon-home spanPad"></span>Almaty city, Zharokov street 159</li>
+                    <li><span class="glyphicon glyphicon-phone-alt spanPad"></span>8(727)398-23-32</li>
+                    <li><span class="glyphicon glyphicon-phone spanPad"></span>8(701)736-35-55</li>
+                    <li><span class="glyphicon glyphicon-phone spanPad"></span>8(707)234-12-24</li>
+                    <li><span class="glyphicon glyphicon-envelope spanPad"></span>2909Serik@gmail.com</li>
+                </ul>
+            </div>
+
+            <div class="col-md-7">
+                <h4 class="footHeading">Address: </h4>
+                <div id="map"></div>
+            </div>
+            <div class="col-md-2">
+                <h4 class="footHeading">Social networks: </h4>
+                <ul>
+                    <li><a class="styled" href="https://vk.com/club.lacucina"><img class="circled" src="~/Content/images/vk.png" alt="">   VK</a></li>
+                    <li><a class="styled" href="https://www.facebook.com/Citt%C3%A0-Italian-Restraunt-385251598209784/?fref=ts"><img class="circled" src="images/facebook.png" alt="">   Facebook  </a></li>
+                    <li><a class="styled" href="https://twitter.com/CarmelosItalian"><img class="circled" src="images/twitter.png" alt="">   Twitter </a></li>
+                    <li><a class="styled" href="https://www.instagram.com/explore/locations/1023034678/"><img class="circled" src="images/insta.png" alt="">   Instagram </a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
