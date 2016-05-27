@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using System.Web.Routing;
 
 namespace FinalProject.Controllers
 {
@@ -13,6 +14,8 @@ namespace FinalProject.Controllers
             return View();
         }
 
+
+
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
@@ -20,11 +23,28 @@ namespace FinalProject.Controllers
             return View();
         }
 
-        public ActionResult Contact()
+        public ActionResult Gallery()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "Your application description page.";
 
             return View();
         }
+
+        public ActionResult Menu()
+        {
+            ViewBag.Message = "Your application description page.";
+
+            return View();
+        }
+
+        public ActionResult Partners()
+        {
+            ViewBag.Message = "Your application description page.";
+
+            return View();
+        }
+
+       
+
     }
 }

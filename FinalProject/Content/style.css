@@ -1,40 +1,14 @@
-﻿@import url(http://fonts.googleapis.com/earlyaccess/alefhebrew.css);
-@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+﻿@import url(fonts.css);
 *{
 	margin: 0;
 	padding: 0;
 }
 
-@font-face{
-	font-family: opensans;
-	src: url(../fonts/OpenSans-Bold.ttf);
-}
-
-@font-face{
-	font-family: opensans-regular;
-	src: url(../fonts/OpenSans-Regular.ttf);
-}
-
-@font-face{
-	font-family: opensans-semibold;
-	src: url(../fonts/OpenSans-Semibold.ttf);
-}
-@font-face{
-	font-family: lato-regular;
-	src: url(../fonts/Lato/Lato-Regular.ttf);
-}
-@font-face{
-	font-family: lato-light;
-	src: url(../fonts/Lato/Lato-Light.ttf);
-}
-@font-face{
-	font-family: lato-Black;
-	src: url(../fonts/Lato/Lato-Black.ttf);
-}
 body{
-	background-image: url(../images/bg.jpg);
 	font-family: Helvetica;
 	color: white;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
 }
 .fix{
 	position: fixed;
@@ -45,8 +19,21 @@ body{
 	width: 100%;
 	z-index: 10;
 }
-
-
+.topHeading{
+    font-family: lobster;
+    font-size: 2.4em;
+    color: white;
+    display: inline;
+}
+.topicon{
+    width: 60px;
+    height: 50px;
+    border-radius: 10px;
+    display: inline;
+}
+.topStyle{
+    background: url(images/top-bg.png) top center repeat-x #fff;
+}
 p span{
 	font-family: opensans-regular;
 }
@@ -71,8 +58,8 @@ h3{
 	z-index: 5;
 }
 menu{
-	background: #B12525;
-	text-align: right;
+	/*background: url(images/top-bg.png) top center repeat-x #fff;*/
+	text-align: center;
 	display: block;
 	height: 50px;
 	opacity: 1;
@@ -88,8 +75,8 @@ menu li{
 	color: #f39c12;
 }
 menu li a{
-	font-size: 2em;
-	font-family: opensans;
+	font-size: 1.5em;
+	font-family:  segoeuii;
 	color: white;
 	transition-property: all;
 	transition-duration: 0.5s;
@@ -100,20 +87,28 @@ menu li a{
 	padding: 4px 4px 5px 4px;
 }
 menu li a:hover:not(.active){
-	background-color: white;
 	text-decoration: none;
 	font-style: bold;
-	border-radius: 5px;
+    font-size: 1.7em;
+    color: darkgray;
 }
 menu li a.active{
-	text-decoration: none;
-	color: white; 
+	text-decoration: underline;
+	color: #f1c40f; 
+	border-radius: 5px;
+}
+.active{
+    text-decoration: underline;
+	color: #f1c40f; 
 	border-radius: 5px;
 }
 .icon{
 	position: absolute;
-	top: 5;
-	left: 15;
+	top: 5px;
+	right: 10px;
+}
+.dropdown-menu{
+    left: -100px;
 }
 .fonting{
 	font-size: 2em;
@@ -132,8 +127,8 @@ menu li a.active{
 }
 .wordPlace{
 	position: absolute;
-	top: 110px;
-	right: 100px;
+	top: 170px;
+	right: 120px;
 	background-color: black;
 	color: white!important;
 	font-family: opensans;
@@ -216,7 +211,7 @@ hr {
 	font-family: lato-Black: ;
 	font-size: 1.65em;
 	line-height: 110%;
-	color: black;
+	color: white;
 }
 .contacts{
 	font-family: lato-regular;
@@ -228,7 +223,7 @@ hr {
 .styled{
 	font-family: lato-regular;
 	text-decoration: none;
-	color: grey;
+	color: white;
 }
 .styled:hover{
 	text-decoration: none;
@@ -239,14 +234,13 @@ hr {
 }
 #map{
 	width: 650px;
-	height: 300px;
 }
 .padded{
 	padding-top: 20px;
 	border-right: 1px solid white;
 }
 .newModal{
-	background-image: url(../images/bg.jpg);	
+	background-image: url(images/bg.jpg);	
 }
 .headText{
 	font-family: lato-Black;
@@ -279,4 +273,15 @@ hr {
 }
 .colorHead{
 	font-family: opensans-semibold;
+}
+.footer{
+    background: #000 url(images/bottom-bg.jpg) top center no-repeat;
+	display: block;
+    color: white;
+    font-size: 13px;
+    width: 100%;
+    height: 155px;
+}   
+.rowSize{
+    width: 100%;
 }
